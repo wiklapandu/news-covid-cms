@@ -1,0 +1,167 @@
+:root {
+  /* HSL Button */
+  --primary: 189;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide .text-content {
+  top: 30px;
+  left: 20px;
+  position: absolute;
+  z-index: 10;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-link {
+  color: inherit;
+}
+
+.text-date {
+  /* color: #ada9ab; */
+  color: white;
+  font-weight: 500;
+  opacity: 90%;
+}
+
+.text-desc,
+.text-title {
+  text-align: left;
+}
+.text-paragraf {
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+}
+.text-desc {
+  /* color: #ada9ab; */
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .text-title {
+    font-size: 2rem;
+  }
+  .text-desc {
+    font-size: 1rem;
+  }
+}
+
+.text-link:hover {
+  color: inherit;
+  opacity: 80%;
+}
+
+a.card-title {
+  color: #212529;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.card-title:hover {
+  color: #fbdb33;
+}
+
+.img-link {
+  transition: all 0.3s ease-in;
+}
+.img-link:hover {
+  opacity: 90%;
+  transform: scale(95%);
+}
+
+.sosmed-link {
+  transition: all 0.3s ease-in;
+}
+.sosmed-link:hover {
+  opacity: 90%;
+}
+
+/* Make Background */
+.bg-blue {
+  background-color: #f4fdfe !important;
+}
+
+/* make button */
+
+.btn-blue {
+  color: #fff;
+  background-color: hsl(var(--primary), 98%, 52%);
+  border-color: hsl(var(--primary), 98%, 52%);
+}
+.btn-blue:hover {
+  color: #fff;
+  background-color: hsl(var(--primary), 90%, 44%);
+  border-color: hsl(var(--primary), 91%, 42%);
+}
+.btn-check:focus + .btn-blue,
+.btn-blue:focus {
+  color: #fff;
+  background-color: hsl(var(--primary), 90%, 44%);
+  border-color: hsl(var(--primary), 91%, 42%);
+  box-shadow: 0 0 0 0.25rem hsla(var(--primary), 98%, 59%, 0.5);
+}
+.btn-check:active + .btn-blue,
+.btn-check:checked + .btn-blue,
+.btn-blue.active,
+.btn-blue:active,
+.show > .btn-blue.dropdown-toggle {
+  color: #fff;
+  background-color: hsl(var(--primary), 91%, 42%);
+  border-color: hsl(var(--primary), 90%, 39%);
+}
+.btn-check:active + .btn-blue:focus,
+.btn-check:checked + .btn-blue:focus,
+.btn-blue.active:focus,
+.btn-blue:active:focus,
+.show > .btn-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem hsla(var(--primary), 98%, 59%, 0.5);
+}
+.btn-blue.disabled,
+.btn-blue:disabled {
+  color: #fff;
+  background-color: hsl(216, 98%, 52%);
+  border-color: hsl(216, 98%, 52%);
+}
+
+/* edit widget sosmed */
+ul.wp-block-social-links li {
+  margin: 0 0.5rem;
+}
+/* wp-social-link */

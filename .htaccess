@@ -1,0 +1,18 @@
+# BEGIN WordPress
+# Arahan (baris) antara "BEGIN WordPress" dan "END WordPress"
+# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
+# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /lks-covid/
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^admin/?$ /lks-covid/wp-login.php [QSA,L]
+RewriteRule ^admin/register/?$ /lks-covid/wp-login.php?action=register [QSA,L]
+RewriteRule ^admin/lostpassword/?$ /lks-covid/wp-login.php?action=lostpassword [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /lks-covid/index.php [L]
+</IfModule>
+
+# END WordPress
